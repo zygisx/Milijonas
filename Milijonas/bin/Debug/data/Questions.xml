@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <collection>
+    <task stage="1">
+      <question>Rusijos sostine?</question>
+      <answer>Maskva</answer>
+      <case1>Sant Peterburgas</case1>
+      <case2>Kazanė</case2>
+    </task>
+    <task stage="1">
+      <question>Turkijos sostine?</question>
+      <answer>Ankara</answer>
+      <case1>Stambulas</case1>
+      <case2>Kazanė</case2>
+    </task>
+    <task stage="1">
+      <question>Latvijos sostine?</question>
+      <answer>Ryga</answer>
+      <case1>Talinas</case1>
+      <case2>Vilnius</case2>
+    </task>
+    <task stage="1">
+      <question>Albanijos sostine?</question>
+      <answer>Tirana</answer>
+      <case1>Kairas</case1>
+      <case2>Skopjė</case2>
+    </task>
+    <task stage="1">
+      <question>Makedonijos sostine?</question>
+      <answer>Skopjė</answer>
+      <case1>Belgradas</case1>
+      <case2>Bukareštas</case2>
+    </task>
+    <task stage="1">
+      <question>Kada įvyko Žalgirio mūšis?</question>
+      <answer>1410</answer>
+      <case1>1524</case1>
+      <case2>1432</case2>
+    </task>
+    <task stage="2">
+      <question>Vilniaus miesto įkūrėjas</question>
+      <answer>Gediminas</answer>
+      <case1>Žygimantas</case1>
+      <case2>Zuokas</case2>
+    </task>
+    <task stage="3">
+      <question>Kuris iš šių asmenų NEBUVO vienas iš Lietuvos nepriklausomybės akto signatarų ?</question>
+      <answer>Kazys Grinius</answer>
+      <case1>Mykolas Biržiška</case1>
+      <case2>Jonas Basanavičius</case2>
+    </task>
+    <task stage="1">
+      <question>Baltarusijos sostine?</question>
+      <answer>Minskas</answer>
+      <case1>Talinas</case1>
+      <case2>Gardinas</case2>
+    </task>
+  </collection>
+</root>
