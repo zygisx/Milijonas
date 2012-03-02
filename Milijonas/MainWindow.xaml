@@ -1,0 +1,10 @@
+﻿<Window x:Class="Milijonas.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="318" Width="376">
+    <Grid>
+        <Button Content="Pradėti žaidimą" Height="66" HorizontalAlignment="Left" Margin="64,62,0,0" Name="startButton" VerticalAlignment="Top" Width="232" Click="startGame" />
+        <Button Content="Admin" HorizontalAlignment="Left" Margin="64,128,0,89" Name="adminButton" Width="232" Click="startAdmin" />
+        <Button Content="Išeiti" HorizontalAlignment="Left" Margin="64,0,0,24" Name="exitButton" Width="232" Click="exit" Height="64" VerticalAlignment="Bottom" />
+    </Grid>
+</Window>
