@@ -27,19 +27,11 @@ namespace Milijonas
             this.parent = parent;
             InitializeComponent();
             game = new Game();
-			this.questionBox.Content = "dasfwrfa fafwefkoj0p[jwhef9-w-yg -h[ ihjuh gyg piuoefrwefAFwef wefrwefv nouibif v boiu; vo igv oyvgf c?";
-            
-			//this.questionBox.Content = game.CurrentQuestion.Problem;
-            string[] answers = this.game.GetPossibleAnswers();
-			this.case1Button.Content = answers[0];
-			this.case2Button.Content = answers[1];
-			this.case3Button.Content = answers[2];
-			
-
+			this.showNextQuestion();
         }
 		
 		private void showNextQuestion() {
-			this.questionBox.Content = game.CurrentQuestion.Problem;
+			this.questionBox.Text = game.CurrentQuestion.Problem;
             string[] answers = this.game.GetPossibleAnswers();
 			this.case1Button.Content = answers[0];
 			this.case2Button.Content = answers[1];
