@@ -55,5 +55,23 @@
       <case1>Talinas</case1>
       <case2>Gardinas</case2>
     </task>
+    <task stage="2">
+      <question>Australijos piniginis vienetas?</question>
+      <answer>Australijos doleris</answer>
+      <case1>Australijos pesas</case1>
+      <case2>Euras</case2>
+    </task>
+    <task stage="4">
+      <question>Knygos "Žiedu valdovas" autorius?</question>
+      <answer>Tolkinas</answer>
+      <case1>Dostojevskis</case1>
+      <case2>Defo</case2>
+    </task>
+    <task stage="3">
+      <question>Kada įkurta NATO gynybine organizacija?</question>
+      <answer>1949</answer>
+      <case1>1955</case1>
+      <case2>1980</case2>
+    </task>
   </collection>
 </root>

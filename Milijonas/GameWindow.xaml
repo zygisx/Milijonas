@@ -4,7 +4,6 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" x:Class="Milijonas.GameWindow"
         Title="GameWindow" Height="478" Width="768" Closing="gameWindowClosing" Foreground="Black">
 	<Window.Resources>
-		
 
 		<Style x:Key="ButtonStyle2" TargetType="{x:Type Button}">
 			<Setter Property="Template">
@@ -57,6 +56,7 @@
 		</LinearGradientBrush>
 	</Window.Background>
     <Grid>
+
     	<Grid.Background>
     		<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
     			<GradientStop Color="Black" Offset="0.904"/>
@@ -81,5 +81,222 @@
 		FontFamily="MS Reference Sans Serif" FontSize="18.667" Foreground="White" 
 		VerticalAlignment="Bottom" Height="59.06" MaxHeight="64"><Run Language="lt-lt" 
 		Text=""/></TextBlock>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Right" Margin="0,206.299,76.269,0" Stroke="Black" Width="52.712" RadiusY="19.666" RadiusX="19.666" RenderTransformOrigin="0.397,1.963" Height="10.66" VerticalAlignment="Top"/>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Right" Margin="0,195.865,76.269,0" Stroke="Black" Width="52.712" Height="10.66" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" RadiusY="19.666" RadiusX="19.666">
+        	<Rectangle.RenderTransform>
+        		<TransformGroup>
+        			<ScaleTransform/>
+        			<SkewTransform AngleX="0.627"/>
+        			<RotateTransform Angle="-0.233"/>
+        			<TranslateTransform/>
+        		</TransformGroup>
+        	</Rectangle.RenderTransform>
+        </Rectangle>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Right" Margin="0,185.829,75.943,0" Stroke="Black" Width="52.711" Height="10.66" VerticalAlignment="Top" RadiusY="19.666" RadiusX="19.666"/>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Right" Margin="0,175.679,76.161,0" Stroke="Black" Width="52.713" RadiusY="19.666" RadiusX="19.666" RenderTransformOrigin="0.397,1.963" Height="10.66" VerticalAlignment="Top"/>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Right" Margin="0,165.246,76.161,0" Stroke="Black" Width="52.713" Height="10.659" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" RadiusY="19.666" RadiusX="19.666">
+        	<Rectangle.RenderTransform>
+        		<TransformGroup>
+        			<ScaleTransform/>
+        			<SkewTransform AngleX="0.627"/>
+        			<RotateTransform Angle="-0.233"/>
+        			<TranslateTransform/>
+        		</TransformGroup>
+        	</Rectangle.RenderTransform>
+        </Rectangle>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Right" Margin="0,155.209,75.834,0" Stroke="Black" Width="52.713" Height="10.66" VerticalAlignment="Top" RadiusY="19.666" RadiusX="19.666"/>
+        <Rectangle HorizontalAlignment="Right" Margin="0,206.299,76.269,0" Stroke="Black" Width="52.712" RadiusY="19.666" RadiusX="19.666" RenderTransformOrigin="0.397,1.963" Height="10.66" VerticalAlignment="Top">
+        	<Rectangle.Fill>
+        		<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+        			<GradientStop Color="Black" Offset="1"/>
+        			<GradientStop Color="#FF1B8912" Offset="0.339"/>
+        		</LinearGradientBrush>
+        	</Rectangle.Fill>
+        </Rectangle>
+        <Rectangle HorizontalAlignment="Right" Margin="0,195.865,76.269,0" Stroke="Black" Width="52.712" Height="10.66" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" RadiusY="19.666" RadiusX="19.666">
+        	<Rectangle.Fill>
+        		<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+        			<GradientStop Color="Black" Offset="1"/>
+        			<GradientStop Color="#FF1B8912" Offset="0.339"/>
+        		</LinearGradientBrush>
+        	</Rectangle.Fill>
+        	<Rectangle.RenderTransform>
+        		<TransformGroup>
+        			<ScaleTransform/>
+        			<SkewTransform AngleX="0.627"/>
+        			<RotateTransform Angle="-0.233"/>
+        			<TranslateTransform/>
+        		</TransformGroup>
+        	</Rectangle.RenderTransform>
+        </Rectangle>
+        <Rectangle HorizontalAlignment="Right" Margin="0,185.829,75.943,0" Stroke="Black" Width="52.711" Height="10.66" VerticalAlignment="Top" RadiusY="19.666" RadiusX="19.666">
+        	<Rectangle.Fill>
+        		<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+        			<GradientStop Color="Black" Offset="1"/>
+        			<GradientStop Color="#FF1B8912" Offset="0.339"/>
+        		</LinearGradientBrush>
+        	</Rectangle.Fill>
+        </Rectangle>
+        <Rectangle HorizontalAlignment="Right" Margin="0,175.679,76.161,0" Stroke="Black" Width="52.713" RadiusY="19.666" RadiusX="19.666" RenderTransformOrigin="0.397,1.963" Height="10.66" VerticalAlignment="Top">
+        	<Rectangle.Fill>
+        		<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+        			<GradientStop Color="Black" Offset="1"/>
+        			<GradientStop Color="#FF1B8912" Offset="0.339"/>
+        		</LinearGradientBrush>
+        	</Rectangle.Fill>
+        </Rectangle>
+        <Rectangle HorizontalAlignment="Right" Margin="0,165.246,76.161,0" Stroke="Black" Width="52.713" Height="10.659" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" RadiusY="19.666" RadiusX="19.666">
+        	<Rectangle.Fill>
+        		<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+        			<GradientStop Color="Black" Offset="1"/>
+        			<GradientStop Color="#FF1B8912" Offset="0.339"/>
+        		</LinearGradientBrush>
+        	</Rectangle.Fill>
+        	<Rectangle.RenderTransform>
+        		<TransformGroup>
+        			<ScaleTransform/>
+        			<SkewTransform AngleX="0.627"/>
+        			<RotateTransform Angle="-0.233"/>
+        			<TranslateTransform/>
+        		</TransformGroup>
+        	</Rectangle.RenderTransform>
+        </Rectangle>
+        <Rectangle HorizontalAlignment="Right" Margin="0,155.209,75.834,0" Stroke="Black" Width="52.713" Height="10.66" VerticalAlignment="Top" RadiusY="19.666" RadiusX="19.666">
+        	<Rectangle.Fill>
+        		<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+        			<GradientStop Color="Black" Offset="1"/>
+        			<GradientStop Color="#FF1B8912" Offset="0.339"/>
+        		</LinearGradientBrush>
+        	</Rectangle.Fill>
+        </Rectangle>
+        <Rectangle HorizontalAlignment="Right" Margin="0,144.299,75.269,0" Stroke="Black" Width="52.712" RadiusY="19.666" RadiusX="19.666" RenderTransformOrigin="0.397,1.963" Height="10.66" VerticalAlignment="Top">
+        	<Rectangle.Fill>
+        		<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+        			<GradientStop Color="Black" Offset="1"/>
+        			<GradientStop Color="#FF1B8912" Offset="0.339"/>
+        		</LinearGradientBrush>
+        	</Rectangle.Fill>
+        </Rectangle>
+        <Rectangle HorizontalAlignment="Right" Margin="0,133.865,75.269,0" Stroke="Black" Width="52.712" Height="10.66" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" RadiusY="19.666" RadiusX="19.666">
+        	<Rectangle.Fill>
+        		<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+        			<GradientStop Color="Black" Offset="1"/>
+        			<GradientStop Color="#FF1B8912" Offset="0.339"/>
+        		</LinearGradientBrush>
+        	</Rectangle.Fill>
+        	<Rectangle.RenderTransform>
+        		<TransformGroup>
+        			<ScaleTransform/>
+        			<SkewTransform AngleX="0.627"/>
+        			<RotateTransform Angle="-0.233"/>
+        			<TranslateTransform/>
+        		</TransformGroup>
+        	</Rectangle.RenderTransform>
+        </Rectangle>
+        <Rectangle HorizontalAlignment="Right" Margin="0,123.829,74.943,0" Stroke="Black" Width="52.711" Height="10.66" VerticalAlignment="Top" RadiusY="19.666" RadiusX="19.666">
+        	<Rectangle.Fill>
+        		<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+        			<GradientStop Color="Black" Offset="1"/>
+        			<GradientStop Color="#FF1B8912" Offset="0.339"/>
+        		</LinearGradientBrush>
+        	</Rectangle.Fill>
+        </Rectangle>
+        <Rectangle HorizontalAlignment="Right" Margin="0,113.679,75.161,0" Stroke="Black" Width="52.713" RadiusY="19.666" RadiusX="19.666" RenderTransformOrigin="0.397,1.963" Height="10.66" VerticalAlignment="Top">
+        	<Rectangle.Fill>
+        		<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+        			<GradientStop Color="Black" Offset="1"/>
+        			<GradientStop Color="#FF1B8912" Offset="0.339"/>
+        		</LinearGradientBrush>
+        	</Rectangle.Fill>
+        </Rectangle>
+        <Rectangle HorizontalAlignment="Right" Margin="0,103.246,75.161,0" Stroke="Black" Width="52.713" Height="10.659" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" RadiusY="19.666" RadiusX="19.666">
+        	<Rectangle.Fill>
+        		<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+        			<GradientStop Color="Black" Offset="1"/>
+        			<GradientStop Color="#FF1B8912" Offset="0.339"/>
+        		</LinearGradientBrush>
+        	</Rectangle.Fill>
+        	<Rectangle.RenderTransform>
+        		<TransformGroup>
+        			<ScaleTransform/>
+        			<SkewTransform AngleX="0.627"/>
+        			<RotateTransform Angle="-0.233"/>
+        			<TranslateTransform/>
+        		</TransformGroup>
+        	</Rectangle.RenderTransform>
+        </Rectangle>
+        <Rectangle HorizontalAlignment="Right" Margin="0,93.209,74.834,0" Stroke="Black" Width="52.713" Height="10.66" VerticalAlignment="Top" RadiusY="19.666" RadiusX="19.666">
+        	<Rectangle.Fill>
+        		<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+        			<GradientStop Color="Black" Offset="0.974"/>
+        			<GradientStop Color="#FF706969" Offset="0.117"/>
+        		</LinearGradientBrush>
+        	</Rectangle.Fill>
+        </Rectangle>
+        <Rectangle HorizontalAlignment="Right" Margin="0,82.799,75.269,0" Stroke="Black" Width="52.712" RadiusY="19.666" RadiusX="19.666" RenderTransformOrigin="0.397,1.963" Height="10.66" VerticalAlignment="Top">
+        	<Rectangle.Fill>
+        		<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+        			<GradientStop Color="Black" Offset="0.974"/>
+        			<GradientStop Color="#FF706969" Offset="0.117"/>
+        		</LinearGradientBrush>
+        	</Rectangle.Fill>
+        </Rectangle>
+        <Rectangle HorizontalAlignment="Right" Margin="0,72.365,75.269,0" Stroke="Black" Width="52.712" Height="10.66" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" RadiusY="19.666" RadiusX="19.666">
+        	<Rectangle.Fill>
+        		<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+        			<GradientStop Color="Black" Offset="0.974"/>
+        			<GradientStop Color="#FF706969" Offset="0.117"/>
+        		</LinearGradientBrush>
+        	</Rectangle.Fill>
+        	<Rectangle.RenderTransform>
+        		<TransformGroup>
+        			<ScaleTransform/>
+        			<SkewTransform AngleX="0.627"/>
+        			<RotateTransform Angle="-0.233"/>
+        			<TranslateTransform/>
+        		</TransformGroup>
+        	</Rectangle.RenderTransform>
+        </Rectangle>
+        <Rectangle HorizontalAlignment="Right" Margin="0,62.329,74.943,0" Stroke="Black" Width="52.711" Height="10.66" VerticalAlignment="Top" RadiusY="19.666" RadiusX="19.666">
+        	<Rectangle.Fill>
+        		<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+        			<GradientStop Color="Black" Offset="0.974"/>
+        			<GradientStop Color="#FF706969" Offset="0.117"/>
+        		</LinearGradientBrush>
+        	</Rectangle.Fill>
+        </Rectangle>
+        <Rectangle HorizontalAlignment="Right" Margin="0,52.179,75.161,0" Stroke="Black" Width="52.713" RadiusY="19.666" RadiusX="19.666" RenderTransformOrigin="0.397,1.963" Height="10.66" VerticalAlignment="Top">
+        	<Rectangle.Fill>
+        		<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+        			<GradientStop Color="Black" Offset="0.974"/>
+        			<GradientStop Color="#FF706969" Offset="0.117"/>
+        		</LinearGradientBrush>
+        	</Rectangle.Fill>
+        </Rectangle>
+        <Rectangle HorizontalAlignment="Right" Margin="0,41.746,75.161,0" Stroke="Black" Width="52.713" Height="10.659" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" RadiusY="19.666" RadiusX="19.666">
+        	<Rectangle.Fill>
+        		<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+        			<GradientStop Color="Black" Offset="0.974"/>
+        			<GradientStop Color="#FF706969" Offset="0.117"/>
+        		</LinearGradientBrush>
+        	</Rectangle.Fill>
+        	<Rectangle.RenderTransform>
+        		<TransformGroup>
+        			<ScaleTransform/>
+        			<SkewTransform AngleX="0.627"/>
+        			<RotateTransform Angle="-0.233"/>
+        			<TranslateTransform/>
+        		</TransformGroup>
+        	</Rectangle.RenderTransform>
+        </Rectangle>
+        <Rectangle HorizontalAlignment="Right" Margin="0,31.709,74.834,0" Stroke="Black" Width="52.713" Height="10.66" VerticalAlignment="Top" RadiusY="19.666" RadiusX="19.666">
+        	<Rectangle.Fill>
+        		<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+        			<GradientStop Color="Black" Offset="0.974"/>
+        			<GradientStop Color="#FF706969" Offset="0.117"/>
+        		</LinearGradientBrush>
+        	</Rectangle.Fill>
+        </Rectangle>
     </Grid>
+
 </Window>
