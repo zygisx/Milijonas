@@ -19,7 +19,7 @@ namespace Milijonas.Logic
         Third = 3,  // 10 000, 20 000, 40 000, 60 000
         Fourth = 4, // 100 000, 150 000, 200 000
         Fifth = 5,  // 300 000, 500 000
-        Sixth = 6,  // 100 000
+        Sixth = 6,  // 1 000 000
         Winner = 7,  // Winner  
     }
 

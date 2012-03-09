@@ -48,6 +48,25 @@
 			</Setter>
 		</Style>
 		<Storyboard x:Key="OnMouseEnter1"/>
+		<Style x:Key="LabelStyle1" TargetType="{x:Type Label}">
+			<Setter Property="Template">
+				<Setter.Value>
+					<ControlTemplate TargetType="{x:Type Label}">
+						<Grid>
+							<Rectangle x:Name="label1" RadiusY="19.666" RadiusX="19.666" RenderTransformOrigin="0.397,1.963" Stroke="Black">
+								<Rectangle.Fill>
+									<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+										<GradientStop Color="Black" Offset="1"/>
+										<GradientStop Color="#FF168B0C" Offset="0.339"/>
+									</LinearGradientBrush>
+								</Rectangle.Fill>
+							</Rectangle>
+							<ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}" Margin="15,1,0,0" Width="71.193"/>
+						</Grid>
+					</ControlTemplate>
+				</Setter.Value>
+			</Setter>
+		</Style>
 	</Window.Resources>
 	<Window.Background>
 		<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
@@ -201,102 +220,16 @@
         		</LinearGradientBrush>
         	</Rectangle.Fill>
         </Rectangle>
-        <Rectangle HorizontalAlignment="Right" Margin="0,113.679,75.161,0" Stroke="Black" Width="52.713" RadiusY="19.666" RadiusX="19.666" RenderTransformOrigin="0.397,1.963" Height="10.66" VerticalAlignment="Top">
-        	<Rectangle.Fill>
-        		<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-        			<GradientStop Color="Black" Offset="1"/>
-        			<GradientStop Color="#FF1B8912" Offset="0.339"/>
-        		</LinearGradientBrush>
-        	</Rectangle.Fill>
-        </Rectangle>
-        <Rectangle HorizontalAlignment="Right" Margin="0,103.246,75.161,0" Stroke="Black" Width="52.713" Height="10.659" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" RadiusY="19.666" RadiusX="19.666">
-        	<Rectangle.Fill>
-        		<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-        			<GradientStop Color="Black" Offset="1"/>
-        			<GradientStop Color="#FF1B8912" Offset="0.339"/>
-        		</LinearGradientBrush>
-        	</Rectangle.Fill>
-        	<Rectangle.RenderTransform>
-        		<TransformGroup>
-        			<ScaleTransform/>
-        			<SkewTransform AngleX="0.627"/>
-        			<RotateTransform Angle="-0.233"/>
-        			<TranslateTransform/>
-        		</TransformGroup>
-        	</Rectangle.RenderTransform>
-        </Rectangle>
-        <Rectangle HorizontalAlignment="Right" Margin="0,93.209,74.834,0" Stroke="Black" Width="52.713" Height="10.66" VerticalAlignment="Top" RadiusY="19.666" RadiusX="19.666">
-        	<Rectangle.Fill>
-        		<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-        			<GradientStop Color="Black" Offset="0.974"/>
-        			<GradientStop Color="#FF706969" Offset="0.117"/>
-        		</LinearGradientBrush>
-        	</Rectangle.Fill>
-        </Rectangle>
-        <Rectangle HorizontalAlignment="Right" Margin="0,82.799,75.269,0" Stroke="Black" Width="52.712" RadiusY="19.666" RadiusX="19.666" RenderTransformOrigin="0.397,1.963" Height="10.66" VerticalAlignment="Top">
-        	<Rectangle.Fill>
-        		<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-        			<GradientStop Color="Black" Offset="0.974"/>
-        			<GradientStop Color="#FF706969" Offset="0.117"/>
-        		</LinearGradientBrush>
-        	</Rectangle.Fill>
-        </Rectangle>
-        <Rectangle HorizontalAlignment="Right" Margin="0,72.365,75.269,0" Stroke="Black" Width="52.712" Height="10.66" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" RadiusY="19.666" RadiusX="19.666">
-        	<Rectangle.Fill>
-        		<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-        			<GradientStop Color="Black" Offset="0.974"/>
-        			<GradientStop Color="#FF706969" Offset="0.117"/>
-        		</LinearGradientBrush>
-        	</Rectangle.Fill>
-        	<Rectangle.RenderTransform>
-        		<TransformGroup>
-        			<ScaleTransform/>
-        			<SkewTransform AngleX="0.627"/>
-        			<RotateTransform Angle="-0.233"/>
-        			<TranslateTransform/>
-        		</TransformGroup>
-        	</Rectangle.RenderTransform>
-        </Rectangle>
-        <Rectangle HorizontalAlignment="Right" Margin="0,62.329,74.943,0" Stroke="Black" Width="52.711" Height="10.66" VerticalAlignment="Top" RadiusY="19.666" RadiusX="19.666">
-        	<Rectangle.Fill>
-        		<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-        			<GradientStop Color="Black" Offset="0.974"/>
-        			<GradientStop Color="#FF706969" Offset="0.117"/>
-        		</LinearGradientBrush>
-        	</Rectangle.Fill>
-        </Rectangle>
-        <Rectangle HorizontalAlignment="Right" Margin="0,52.179,75.161,0" Stroke="Black" Width="52.713" RadiusY="19.666" RadiusX="19.666" RenderTransformOrigin="0.397,1.963" Height="10.66" VerticalAlignment="Top">
-        	<Rectangle.Fill>
-        		<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-        			<GradientStop Color="Black" Offset="0.974"/>
-        			<GradientStop Color="#FF706969" Offset="0.117"/>
-        		</LinearGradientBrush>
-        	</Rectangle.Fill>
-        </Rectangle>
-        <Rectangle HorizontalAlignment="Right" Margin="0,41.746,75.161,0" Stroke="Black" Width="52.713" Height="10.659" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" RadiusY="19.666" RadiusX="19.666">
-        	<Rectangle.Fill>
-        		<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-        			<GradientStop Color="Black" Offset="0.974"/>
-        			<GradientStop Color="#FF706969" Offset="0.117"/>
-        		</LinearGradientBrush>
-        	</Rectangle.Fill>
-        	<Rectangle.RenderTransform>
-        		<TransformGroup>
-        			<ScaleTransform/>
-        			<SkewTransform AngleX="0.627"/>
-        			<RotateTransform Angle="-0.233"/>
-        			<TranslateTransform/>
-        		</TransformGroup>
-        	</Rectangle.RenderTransform>
-        </Rectangle>
-        <Rectangle HorizontalAlignment="Right" Margin="0,31.709,74.834,0" Stroke="Black" Width="52.713" Height="10.66" VerticalAlignment="Top" RadiusY="19.666" RadiusX="19.666">
-        	<Rectangle.Fill>
-        		<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-        			<GradientStop Color="Black" Offset="0.974"/>
-        			<GradientStop Color="#FF706969" Offset="0.117"/>
-        		</LinearGradientBrush>
-        	</Rectangle.Fill>
-        </Rectangle>
+        <Label x:Name="label1" Content="100" HorizontalAlignment="Left" Height="19.751" Margin="17.986,198.921,0,0" Style="{DynamicResource LabelStyle1}" VerticalAlignment="Top" Width="53.014" Foreground="White" FontFamily="MS Reference Sans Serif" FontSize="13.333"/>
+        <Label x:Name="label2" Content="200" HorizontalAlignment="Left" Height="19.751" Margin="17.986,179.921,0,0" Style="{DynamicResource LabelStyle1}" VerticalAlignment="Top" Width="58.014" Foreground="White" FontFamily="MS Reference Sans Serif" FontSize="13.333"/>
+        <Label x:Name="label3" Content="400" HorizontalAlignment="Left" Height="19.751" Margin="17.986,161.421,0,0" Style="{DynamicResource LabelStyle1}" VerticalAlignment="Top" Width="64.014" Foreground="White" FontFamily="MS Reference Sans Serif" FontSize="13.333"/>
+        <Label x:Name="label4" Content="600" HorizontalAlignment="Left" Height="19.751" Margin="17.986,142.421,0,0" Style="{DynamicResource LabelStyle1}" VerticalAlignment="Top" Width="69.514" Foreground="White" FontFamily="MS Reference Sans Serif" FontSize="13.333"/>
+        <Label x:Name="label5" Content="1 000" HorizontalAlignment="Left" Height="19.751" Margin="16.986,122.421,0,0" Style="{DynamicResource LabelStyle1}" VerticalAlignment="Top" Width="78.014" Foreground="White" FontFamily="MS Reference Sans Serif" FontSize="13.333"/>
+        <Label x:Name="label6" Content="2 000" HorizontalAlignment="Left" Height="19.751" Margin="16.986,103.421,0,0" Style="{DynamicResource LabelStyle1}" VerticalAlignment="Top" Width="84.014" Foreground="White" FontFamily="MS Reference Sans Serif" FontSize="13.333"/>
+        <Label x:Name="label7" Content="4 000" HorizontalAlignment="Left" Height="19.751" Margin="16.986,84.921,0,0" Style="{DynamicResource LabelStyle1}" VerticalAlignment="Top" Width="89.514" Foreground="White" FontFamily="MS Reference Sans Serif" FontSize="13.333"/>
+        <Label x:Name="label8" Content="6 000" HorizontalAlignment="Left" Height="19.751" Margin="16.986,65.921,0,0" Style="{DynamicResource LabelStyle1}" VerticalAlignment="Top" Width="95.514" Foreground="White" FontFamily="MS Reference Sans Serif" FontSize="13.333"/>
+        <Label x:Name="label9" Content="10 000" HorizontalAlignment="Left" Height="19.751" Margin="17.486,45.921,0,0" Style="{DynamicResource LabelStyle1}" VerticalAlignment="Top" Width="102.514" Foreground="White" FontFamily="MS Reference Sans Serif" FontSize="13.333"/>
+        <Label x:Name="label3_Copy" Content="400" HorizontalAlignment="Left" Height="19.751" Margin="184.486,47.421,0,0" Style="{DynamicResource LabelStyle1}" VerticalAlignment="Top" Width="64.014" Foreground="White" FontFamily="MS Reference Sans Serif" FontSize="13.333"/>
     </Grid>
 
 </Window>
