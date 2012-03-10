@@ -31,20 +31,15 @@ namespace Milijonas.Logic
        
 
         /** private fields */
-        private Question question;
-        private QuestionsStorage db;
+        private Question currentQuestion;
+        private string[] randomAnswers;
         private Boolean skipQuestionHelp = true;
         private Boolean removeIncorrectAnswerHelp = true;
         /** properties */
-        public Question CurrentQuestion
+        public string CurrentQuestion
         {
-            get
-            {
-                return question;
-            }
-            set 
-            {
-                question = value;
+            get {
+                return currentQuestion.Problem;
             }
         }
 
@@ -76,17 +71,17 @@ namespace Milijonas.Logic
         {
             GamePlayer = new Player();
             //db = new QuestionsStorage("Questions.xml");
-            question = QuestionsStorage.GetRandomQuestion(Stage.First);
+            this.NewQuestion();
         }
 
         public string[] GetPossibleAnswers()
         {
-            return CurrentQuestion.GetRandomPossibleAnswers();
+            return this.randomAnswers;
         }
 
         public Boolean SubmitAnswer(string guess)
         {
-            if (CurrentQuestion.CheckAnswer(guess))
+            if (currentQuestion.CheckAnswer(guess))
             {
                 this.GamePlayer.AddCorrectAnswer();
                 return true;
@@ -97,18 +92,30 @@ namespace Milijonas.Logic
             }
         }
 
-        public Question GetNewQuestion() {
-            this.CurrentQuestion = QuestionsStorage.GetRandomQuestion(GamePlayer.CurrentStage);
-            return this.CurrentQuestion;
+        public Boolean IsNewLevel()
+        {
+            return GamePlayer.IsNewLevel();
+        }
+
+        public int GetAnsweredQuestions()
+        {
+            return this.GamePlayer.AnsweredQuestions;
+        }
+
+        public void NewQuestion() {
+            this.currentQuestion = QuestionsStorage.GetRandomQuestion(GamePlayer.CurrentStage);
+            this.randomAnswers = currentQuestion.GetRandomPossibleAnswers();
         }
 
         public void UseSkipQuestionHelp()
         {
             this.skipQuestionHelp = false;
+            this.NewQuestion();
         }
         public void UseRemoveIncorrectAnswerHelp()
         {
             this.removeIncorrectAnswerHelp = false;
+            this.currentQuestion.RemoveIncorrectAnswer(randomAnswers);
         }
     }
 }

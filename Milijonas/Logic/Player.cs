@@ -7,7 +7,11 @@ namespace Milijonas.Logic
 {
     public class Player
     {
-        private int answeredQuestions;
+        public int AnsweredQuestions
+        {
+            get;
+            set;
+        }
 
         public Stage CurrentStage
         {
@@ -24,24 +28,16 @@ namespace Milijonas.Logic
 
         public Player()
         {
-            this.answeredQuestions = 0;
+            this.AnsweredQuestions = 0;
             this.Points = 0;
             this.CurrentStage = Stage.First;
         }
 
         public void AddCorrectAnswer()
         {
-            this.answeredQuestions++;
-            switch (this.answeredQuestions)
-            {
-                case 4:
-                case 8:
-                case 12:
-                case 15:
-                case 17:
-                    this.levelUp();
-                    break;
-            }
+            this.AnsweredQuestions++;
+            if (this.IsNewLevel()) 
+                this.levelUp();
         }
 
         private void levelUp() 
@@ -68,5 +64,19 @@ namespace Milijonas.Logic
         }
 
 
+
+        public bool IsNewLevel()
+        {
+            switch (this.AnsweredQuestions)
+            {
+                case 4:
+                case 8:
+                case 12:
+                case 15:
+                case 17:
+                    return true;
+            }
+            return false;
+        }
     }
 }

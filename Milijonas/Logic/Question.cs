@@ -19,22 +19,23 @@ namespace Milijonas.Logic
         }
 
         // make those private in future
+        
         public string Answer
         {
-            get;
+            private get;
             set;
         }
         public string Case1
         {
-            get;
+            private get;
             set;
         }
         public string Case2
         {
-            get;
+            private get;
             set;
         }
-
+        
         
         public Question()
         {
@@ -61,6 +62,17 @@ namespace Milijonas.Logic
         public bool CheckAnswer(string answer)
         {
             return (answer.Equals(Answer));
+        }
+
+        public void RemoveIncorrectAnswer(string[] answers)
+        {
+            //this.Case2 = "";
+            for (int i = 0; i < answers.Length; i++)
+            {
+                if (answers[i] == this.Case2)
+                    answers[i] = "";
+            }
+            this.Case2 = ""; 
         }
     }
 }

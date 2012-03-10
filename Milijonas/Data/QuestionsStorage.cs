@@ -16,7 +16,7 @@ namespace Milijonas.Data
 
     public class QuestionsStorage
     {
-        public const string XML_FILE_PATH = @"data\ZeeQuiz.xml";
+        public const string XML_FILE_PATH = @"data\Questions.xml";
         
        
 

@@ -92,6 +92,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="DialogBox.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="GameWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -108,6 +112,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Data\QuestionsStorage.cs" />
+    <Compile Include="DialogBox.xaml.cs">
+      <DependentUpon>DialogBox.xaml</DependentUpon>
+    </Compile>
     <Compile Include="GameWindow.xaml.cs">
       <DependentUpon>GameWindow.xaml</DependentUpon>
     </Compile>
@@ -170,6 +177,9 @@
     <None Include="bin\Debug\data\Questions.xml">
       <SubType>Designer</SubType>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\question_mark.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -73,5 +73,113 @@
       <case1>1955</case1>
       <case2>1980</case2>
     </task>
+    <task stage="2">
+      <question>Kokioje muzikos grupėje ankščiau grojo Ruslanas Kirilkinas?</question>
+      <answer>Omega</answer>
+      <case1>Pikaso</case1>
+      <case2>Karališka erdvė</case2>
+    </task>
+    <task stage="2">
+      <question>Romano "Trys draugai" autorius</question>
+      <answer>Remarkas</answer>
+      <case1>Hemingvėjus</case1>
+      <case2>Tolstojus</case2>
+    </task>
+    <task stage="2">
+      <question>Pasaulio bokso sunkaus svorio čempionas iš Ukrainos?</question>
+      <answer>Kličko</answer>
+      <case1>Ali</case1>
+      <case2>Demjanko</case2>
+    </task>
+    <task stage="2">
+      <question>Kurios valstybės plotas didžiausias?</question>
+      <answer>Danijos</answer>
+      <case1>Švedijos</case1>
+      <case2>Suomijos</case2>
+    </task>
+    <task stage="1">
+      <question>Apple kompanijos įkrėjas</question>
+      <answer>Steve Jobs</answer>
+      <case1>Bill Gates</case1>
+      <case2>David Cockburn</case2>
+    </task>
+    <task stage="3">
+      <question>Kuri iš šių sporto šakų nėra olimpinė.</question>
+      <answer>Regbis</answer>
+      <case1>Snieglenčių sportas</case1>
+      <case2>Buriavimas</case2>
+    </task>
+    <task stage="1">
+      <question>Lietuvos Respublikos seimo pirmininkas?</question>
+      <answer>Irena Degutienė</answer>
+      <case1>Artūras Paulauskas</case1>
+      <case2>Mantas Visockis</case2>
+    </task>
+    <task stage="3">
+      <question>Greičiausias pasaulio žmogus?</question>
+      <answer>Usain Bolt</answer>
+      <case1>Taison Gay</case1>
+      <case2>Asafa Powel</case2>
+    </task>
+    <task stage="1">
+      <question>Kuris miestas yra ne Anglijoje?</question>
+      <answer>Glazgas</answer>
+      <case1>Liverpulis</case1>
+      <case2>Birmingemas</case2>
+    </task>
+    <task stage="1">
+      <question>Kuris miestas yra suvalkijoje</question>
+      <answer>Vilkaviškis</answer>
+      <case1>Kretinga</case1>
+      <case2>Radviliškis</case2>
+    </task>
+    <task stage="3">
+      <question>Šiauriausiais neužšalantis Baltijos jūros uostas?</question>
+      <answer>Klaipėda</answer>
+      <case1>Helsinkis</case1>
+      <case2>Talinas</case2>
+    </task>
+    <task stage="3">
+      <question>Su kuo susijęs Lakrosas?</question>
+      <answer>Su kamuoliu</answer>
+      <case1>Su kompasu</case1>
+      <case2>Su bėgimu</case2>
+    </task>
+    <task stage="5">
+      <question>Kur filme matrica susipažino Neo ir Triniti?</question>
+      <answer>Klube</answer>
+      <case1>Gatvėje</case1>
+      <case2>Autobuse</case2>
+    </task>
+    <task stage="4">
+      <question>Grupės Queen vokalistas?</question>
+      <answer>Fredie Mercury</answer>
+      <case1>Justin Bieber</case1>
+      <case2>Bon Scott</case2>
+    </task>
+    <task stage="4">
+      <question>Kiek bitu sudaro vieną baitą?</question>
+      <answer>8</answer>
+      <case1>32</case1>
+      <case2>2</case2>
+    </task>
+    <task stage="4">
+      <question>Kuris miestas yra Europeje?</question>
+      <answer>Valeta</answer>
+      <case1>Keiptaunas</case1>
+      <case2>Kairas</case2>
+    </task>
+    <task stage="5">
+      <question>kur šalis yra pietų amerikos?</question>
+      <answer>Prancūzų Gvinėja</answer>
+      <case1>Kuba</case1>
+      <case2>Fidžis</case2>
+    </task>
+    <task stage="6">
+      <question>Kuris Sportininkas nėra olimpinis čempionas?</question>
+      <answer>Tony Parker</answer>
+      <case1>Jelena Isambajeva</case1>
+      <case2>Michael Phelps</case2>
+    </task>
   </collection>
 </root>

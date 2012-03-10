@@ -21,17 +21,24 @@ namespace Milijonas
     {
         private Game game;
         private MainWindow parent;
+        private Label[] labels;
+        //private DialogBox dialog;
 
         public GameWindow(MainWindow parent)
         {
             this.parent = parent;
             InitializeComponent();
-            game = new Game();
-			this.showNextQuestion();
+            this.game = new Game();
+			this.showQuestion();
+            this.labels = new Label[18] {
+                label1, label2, label3, label4, label5, label6, label7, label8, 
+                label9, label10, label11, label12, label13, label14, label15, label16, label17, label18, 
+            };
+            labels[0].Foreground = Brushes.Turquoise;            
         }
 		
-		private void showNextQuestion() {
-			this.questionBox.Text = game.CurrentQuestion.Problem;
+		private void showQuestion() {
+			this.questionBox.Text = game.CurrentQuestion;
             string[] answers = this.game.GetPossibleAnswers();
 			this.case1Button.Content = answers[0];
 			this.case2Button.Content = answers[1];
@@ -64,20 +71,91 @@ namespace Milijonas
 		{
 			if (this.game.SubmitAnswer(guess))
 			{
-                this.game.GetNewQuestion();
-				this.showNextQuestion();
+                this.enableButtons();
+                this.game.NewQuestion();
+                if (this.game.IsNewLevel())
+                    this.showNewLevelDialog();
+                this.labels[this.game.GetAnsweredQuestions()].Foreground = Brushes.Turquoise;
+                this.labels[this.game.GetAnsweredQuestions() - 1].Foreground = Brushes.White;
+				this.showQuestion();
 			}
 			else 
 			{
-				this.gameLosed();
+				this.gameLost();
 			}
 		}
+
+        private void showNewLevelDialog()
+        {
+            new DialogBox(this,
+                "Sveikiname! Jūs pereinate į aukštensnį lygi.",
+                DialogBox.Type.INFO_DIALOG).ShowDialog();
+        }
 		
-		private void gameLosed() 
+		private void gameLost() 
 		{
-			MessageBox.Show("Dėja jūs pralaimėjote", "");
-			this.Close();
-			this.parent.Show();
+            bool? result = new DialogBox(this, 
+                "Dėja Jūs pralaimėjote.\nNorite žaisti dar kartą?", 
+                DialogBox.Type.QUESTION_DIALOG).ShowDialog();
+            if (result.HasValue && result.Value)
+            {
+                this.restart();
+            }
+            else
+            {
+                this.Close();
+                this.parent.Show();
+            }
 		}
+
+        private void restart()
+        {
+            this.game = new Game();
+            InitializeComponent();
+            this.labels = new Label[18] {
+                label1, label2, label3, label4, label5, label6, label7, label8, 
+                label9, label10, label11, label12, label13, label14, label15, label16, label17, label18, 
+            };
+            foreach (Label l in labels)
+            {
+                l.Foreground = Brushes.Black;
+            }
+            labels[0].Foreground = Brushes.Turquoise;
+            this.showQuestion();
+        }
+
+        private void skipQuestionHelpSelected(object sender, System.Windows.RoutedEventArgs e)
+        {
+            this.game.UseSkipQuestionHelp();
+            this.showQuestion();
+            this.shiftHelpButton.IsEnabled = false;
+        }
+
+        private void removeIncorrectAnswerHelpSelected(object sender, System.Windows.RoutedEventArgs e)
+        {
+            this.game.UseRemoveIncorrectAnswerHelp();
+            this.showQuestion();
+            this.helpRemoveButton.IsEnabled = false;
+            if (((string)this.case1Button.Content) == "")
+            {
+                this.case1Button.IsEnabled = false;
+            }
+            else if (((string)this.case2Button.Content) == "")
+            {
+                this.case2Button.IsEnabled = false;
+            }
+            else if (((string)this.case3Button.Content) == "")
+            {
+                this.case3Button.IsEnabled = false;
+            }
+            
+        }
+
+        private void enableButtons()
+        {
+            this.case1Button.IsEnabled = true;
+            this.case2Button.IsEnabled = true;
+            this.case3Button.IsEnabled = true;
+        }
     }
 }
