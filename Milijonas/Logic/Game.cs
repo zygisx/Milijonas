@@ -28,13 +28,15 @@ namespace Milijonas.Logic
     {
 
         /** constants */
-       
+        public const int REMOVE_INCORRECT_ANSWERS_HELPS = 3;
+        public const int CHANGE_QUESTION_HELPS = 1;
 
         /** private fields */
         private Question currentQuestion;
         private string[] randomAnswers;
+        private int removedAnswers;
         private Boolean skipQuestionHelp = true;
-        private Boolean removeIncorrectAnswerHelp = true;
+        private int removeIncorrectAnswerHelp = REMOVE_INCORRECT_ANSWERS_HELPS;
         /** properties */
         public string CurrentQuestion
         {
@@ -57,7 +59,7 @@ namespace Milijonas.Logic
             }
         }
 
-        public Boolean RemoveInncorectAnswerHelp
+        public int RemoveInncorectAnswerHelp
         {
             get
             {
@@ -70,7 +72,6 @@ namespace Milijonas.Logic
         public Game()
         {
             GamePlayer = new Player();
-            //db = new QuestionsStorage("Questions.xml");
             this.NewQuestion();
         }
 
@@ -105,6 +106,7 @@ namespace Milijonas.Logic
         public void NewQuestion() {
             this.currentQuestion = QuestionsStorage.GetRandomQuestion(GamePlayer.CurrentStage);
             this.randomAnswers = currentQuestion.GetRandomPossibleAnswers();
+            this.removedAnswers = 0;
         }
 
         public void UseSkipQuestionHelp()
@@ -114,7 +116,10 @@ namespace Milijonas.Logic
         }
         public void UseRemoveIncorrectAnswerHelp()
         {
-            this.removeIncorrectAnswerHelp = false;
+            if (this.removedAnswers == 2)
+                return;
+            this.removeIncorrectAnswerHelp--;
+            this.removedAnswers++;
             this.currentQuestion.RemoveIncorrectAnswer(randomAnswers);
         }
     }

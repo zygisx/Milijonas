@@ -181,5 +181,119 @@
       <case1>Jelena Isambajeva</case1>
       <case2>Michael Phelps</case2>
     </task>
+	<task stage="2">
+      <question>Kada prasidėjo ir baigėsi antasis pasaulinis karas?</question>
+      <answer>1939-1945</answer>
+      <case1>1914-1918</case1>
+      <case2>1945-1949</case2>
+    </task>
+    <task stage="3">
+      <question>Kaip vadinamas lapas su natomis ir penklinėmis, iš kurio muzikantai skaito grodami?</question>
+      <answer>Partitūra</answer>
+      <case1>Antraktas</case1>
+      <case2>Bravūra</case2>
+    </task>
+    <task stage="4">
+      <question>Ši automobilio markė pavadinta mergaitės iš Vienos vardu, tai...</question>
+      <answer>Mersedes</answer>
+      <case1>Citroen</case1>
+      <case2>Ferrari</case2>
+    </task>
+    <task stage="1">
+      <question>Kokios sporto šventės pradžioje nešama ir uždegama ugnis?</question>
+      <answer>Olimpinių žaidynių</answer>
+      <case1>Futbolo čempionato</case1>
+      <case2>Krepšinio šempionato</case2>
+    </task>
+    <task stage="2">
+      <question>Kaip vadinama medžiaga, kurios suleidžiama žmonėms, kad jie nesusirgtų kokia nors užkrečiama liga?</question>
+      <answer>Vakcina</answer>
+      <case1>Injekcija</case1>
+      <case2>Skiepas</case2>
+    </task>
+    <task stage="4">
+      <question>Ką vaizduoja milžiniška statula Rio de Ženeiro mieste Brazilijoje?</question>
+      <answer>Jėzų Kristų</answer>
+      <case1>Moterį su paukščiu</case1>
+      <case2>Vyriasiąjį dievą Rio</case2>
+    </task>
+    <task stage="4">
+      <question>Kaip vadinamas architektūros stilius, kuriam būdingos apvalios formos?</question>
+      <answer>Romaninis</answer>
+      <case1>Barokinis</case1>
+      <case2>Neoromaninis</case2>
+    </task>
+    <task stage="3">
+      <question>Kokia Vidržiemio jūros sala turi dvi dalis: turkišką ir graikišką?</question>
+      <answer>Kipras</answer>
+      <case1>Korsika</case1>
+      <case2>Sicilija</case2>
+    </task>
+    <task stage="5">
+      <question>Koks daiktas pasitarnavo modeliu statant garsųjį operos teatrą Sidnėjaus uoste Austalijoje?</question>
+      <answer>Burlaivis</answer>
+      <case1>Palmė</case1>
+      <case2>Daugiakampis</case2>
+    </task>
+    <task stage="5">
+      <question>Kokiam amerikiečių išradėjui pasisekė padaryti 2500 išradimų? </question>
+      <answer>Edisonui</answer>
+      <case1>Raitui</case1>
+      <case2>Franklinui</case2>
+    </task>
+    <task stage="3">
+      <question>Koks komandinis žaidimas, kuriame derinamos futbolo ir rankinio taisyklės, žaidžiamas Anglijoje?</question>
+      <answer>Regbis</answer>
+      <case1>Angiškas futbolas</case1>
+      <case2>Softbolas</case2>
+    </task>
+    <task stage="1">
+      <question>Kaip vadinami grybai be koto,augantys ant lapuočių ir spigliuočių medžių?</question>
+      <answer>Kempinės</answer>
+      <case1>Šungrybis</case1>
+      <case2>Musmėrė</case2>
+    </task>
+    <task stage="2">
+      <question>Dėl kokio gamtos reiškinio Norvegijoje susidarė tiek daug fiordų?</question>
+      <answer>Ledynų</answer>
+      <case1>Tekančio vandens</case1>
+      <case2>Intensyvios saulės</case2>
+    </task>
+    <task stage="2">
+      <question>Kaip vadinama mišri sporto šaka, kai sportininkai šliuožia slidėmis ir šaudo šautuvu?</question>
+      <answer>Biatlonas</answer>
+      <case1>Dvikovė</case1>
+      <case2>Skeletonas</case2>
+    </task>
+    <task stage="3">
+      <question>Kaip vadinami vyriškieji gėlių dauginimosi organai?</question>
+      <answer>Kuokeliai</answer>
+      <case1>Dulkiadaigiai</case1>
+      <case2>Apyžiedis</case2>
+    </task>
+    <task stage="4">
+      <question>Iš ko sudarytas kiaušinio lukštas?</question>
+      <answer>Kalcio</answer>
+      <case1>Kalio</case1>
+      <case2>Natrio</case2>
+    </task>
+    <task stage="6">
+      <question>Vikingams Toras buvo audros, žaibo ir vaisingumo dievas. Kokia savaitės diena susijusi su šiuo dievu?</question>
+      <answer>Ketvirtadienis</answer>
+      <case1>Sekmadienis</case1>
+      <case2>Antradienis</case2>
+    </task>
+    <task stage="2">
+      <question>Kuo minta viščiukas kiaušinyje?</question>
+      <answer>Tryniu</answer>
+      <case1>Baltymu</case1>
+      <case2>Tryniu ir baltymu</case2>
+    </task>
+    <task stage="3">
+      <question>Kokia senovės tauta pirmą kartą pagamino šokoladą?</question>
+      <answer>Actekai</answer>
+      <case1>Egiptiečiai</case1>
+      <case2>Majai</case2>
+    </task>
   </collection>
 </root>

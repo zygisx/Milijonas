@@ -66,13 +66,21 @@ namespace Milijonas.Logic
 
         public void RemoveIncorrectAnswer(string[] answers)
         {
-            //this.Case2 = "";
+            int rand = new Random().Next(2);
+            string toRemove;
+            if (rand == 0) toRemove = Case1;
+            else toRemove = Case2;
+            if (this.Case1 == "") toRemove = this.Case2;
+            if (this.Case2 == "") toRemove = this.Case1;
+            if (this.Case1 == toRemove) this.Case1 = "";
+            else this.Case2 = "";
+            System.Console.WriteLine(toRemove);
             for (int i = 0; i < answers.Length; i++)
             {
-                if (answers[i] == this.Case2)
+                if (answers[i] == toRemove)
                     answers[i] = "";
             }
-            this.Case2 = ""; 
+            toRemove = "";
         }
     }
 }

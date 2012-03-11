@@ -34,7 +34,8 @@ namespace Milijonas
                 label1, label2, label3, label4, label5, label6, label7, label8, 
                 label9, label10, label11, label12, label13, label14, label15, label16, label17, label18, 
             };
-            labels[0].Foreground = Brushes.Turquoise;            
+            this.labels[0].Foreground = Brushes.Turquoise;
+            this.removeAnswerHelpsLeftLabel.Content = Game.REMOVE_INCORRECT_ANSWERS_HELPS;
         }
 		
 		private void showQuestion() {
@@ -87,16 +88,20 @@ namespace Milijonas
 
         private void showNewLevelDialog()
         {
-            new DialogBox(this,
+            DialogBox dialog = new DialogBox(this,
                 "Sveikiname! Jūs pereinate į aukštensnį lygi.",
-                DialogBox.Type.INFO_DIALOG).ShowDialog();
+                DialogBox.Type.INFO_DIALOG);
+            dialog.Owner = this;
+            dialog.ShowDialog();
         }
 		
 		private void gameLost() 
 		{
-            bool? result = new DialogBox(this, 
+            DialogBox dialog = new DialogBox(this, 
                 "Dėja Jūs pralaimėjote.\nNorite žaisti dar kartą?", 
-                DialogBox.Type.QUESTION_DIALOG).ShowDialog();
+                DialogBox.Type.QUESTION_DIALOG);
+            dialog.Owner = this;
+            bool? result = dialog.ShowDialog();
             if (result.HasValue && result.Value)
             {
                 this.restart();
@@ -116,16 +121,22 @@ namespace Milijonas
                 label1, label2, label3, label4, label5, label6, label7, label8, 
                 label9, label10, label11, label12, label13, label14, label15, label16, label17, label18, 
             };
+            
             foreach (Label l in labels)
             {
-                l.Foreground = Brushes.Black;
+                l.Foreground = (Brush)new BrushConverter().ConvertFrom("#FF373737");
             }
             labels[0].Foreground = Brushes.Turquoise;
             this.showQuestion();
+            this.shiftHelpButton.IsEnabled = true;
+            this.helpRemoveButton.IsEnabled = true;
+            this.removeAnswerHelpsLeftLabel.Content = Game.REMOVE_INCORRECT_ANSWERS_HELPS;
+            this.changeQuestionHelpsLeft.Content = Game.CHANGE_QUESTION_HELPS;
         }
 
         private void skipQuestionHelpSelected(object sender, System.Windows.RoutedEventArgs e)
         {
+            this.changeQuestionHelpsLeft.Content = 0;
             this.game.UseSkipQuestionHelp();
             this.showQuestion();
             this.shiftHelpButton.IsEnabled = false;
@@ -134,8 +145,10 @@ namespace Milijonas
         private void removeIncorrectAnswerHelpSelected(object sender, System.Windows.RoutedEventArgs e)
         {
             this.game.UseRemoveIncorrectAnswerHelp();
+            this.removeAnswerHelpsLeftLabel.Content = this.game.RemoveInncorectAnswerHelp;
             this.showQuestion();
-            this.helpRemoveButton.IsEnabled = false;
+            if (this.game.RemoveInncorectAnswerHelp <= 0)
+                this.helpRemoveButton.IsEnabled = false;
             if (((string)this.case1Button.Content) == "")
             {
                 this.case1Button.IsEnabled = false;
@@ -157,5 +170,7 @@ namespace Milijonas
             this.case2Button.IsEnabled = true;
             this.case3Button.IsEnabled = true;
         }
+
+  
     }
 }

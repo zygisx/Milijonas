@@ -70,6 +70,7 @@
     <Reference Include="Microsoft.Expression.Interactions" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Interactivity" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
@@ -180,6 +181,15 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\question_mark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\question.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\titlte.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\titlte1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
