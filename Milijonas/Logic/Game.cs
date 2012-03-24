@@ -97,6 +97,10 @@ namespace Milijonas.Logic
         {
             return GamePlayer.IsNewLevel();
         }
+        public Boolean IsWin() 
+        {
+            return (GamePlayer.CurrentStage == Stage.Winner);
+        }
 
         public int GetAnsweredQuestions()
         {
