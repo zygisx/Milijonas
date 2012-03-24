@@ -80,10 +80,6 @@ namespace Milijonas
                 }
                 if (this.game.IsNewLevel())
                     this.showNewLevelDialog();
-                
-                this.game.NewQuestion();
-                
-                
                 this.labels[this.game.GetAnsweredQuestions()].Foreground = Brushes.Turquoise;
                 this.labels[this.game.GetAnsweredQuestions() - 1].Foreground = Brushes.White;
 				this.showQuestion();
@@ -179,16 +175,11 @@ namespace Milijonas
             if (((string)this.case1Button.Content) == "")
             {
                 this.case1Button.IsEnabled = false;
-            }
-            else if (((string)this.case2Button.Content) == "")
-            {
+            if (((string)this.case2Button.Content) == "")
                 this.case2Button.IsEnabled = false;
-            }
-            else if (((string)this.case3Button.Content) == "")
-            {
+            if (((string)this.case3Button.Content) == "")
                 this.case3Button.IsEnabled = false;
-            }
-            
+        }
         }
 
         private void enableButtons()
