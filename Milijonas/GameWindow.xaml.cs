@@ -73,13 +73,13 @@ namespace Milijonas
 			if (this.game.SubmitAnswer(guess))
 			{
                 this.enableButtons();
-                if (this.game.IsNewLevel())
-                    this.showNewLevelDialog();
                 if (this.game.IsWin())
                 {
                     this.showCongratsDialog();
                     return;
                 }
+                if (this.game.IsNewLevel())
+                    this.showNewLevelDialog();
                 
                 this.game.NewQuestion();
                 
