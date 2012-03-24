@@ -1,0 +1,12 @@
+﻿<Window x:Class="WPFMessageBoxDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <StackPanel>
+        <Button Content="Error" Click="Error_Click" />
+        <Button Content="Warning" Click="Warning_Click" />
+        <Button Content="Question" Click="Question_Click" />
+        <Button Content="Information" Click="Information_Click" />
+        <Button Content="test right" Click="Button_Click" />
+    </StackPanel>
+</Window>

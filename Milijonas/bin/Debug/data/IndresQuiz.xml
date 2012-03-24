@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <collection>
+    <task stage="1">
+      <question>sudas</question>
+      <answer>myzalai</answer>
+      <case1>niekas</case1>
+      <case2>viskas</case2>
+    </task>
+    <task stage="5">
+      <question>Kuri iš šių valstybių nėra NATO arba EU nare?</question>
+      <answer>Portugalija</answer>
+      <case1>Didžioji Britanija</case1>
+      <case2>Sudanas</case2>
+    </task>
+    <task stage="5">
+      <question>Sen. Graikijos deivė Nikėja yra..?</question>
+      <answer>Pergalės deivė</answer>
+      <case1>Medžioklės deivė</case1>
+      <case2>Linksmybių deivė</case2>
+    </task>
+    <task stage="5">
+      <question>Kaip vadinama rasine diskriminacija?</question>
+      <answer>Segregacija</answer>
+      <case1>Sekuliarizacija</case1>
+      <case2>Abolicionizmas</case2>
+    </task>
+    <task stage="4">
+      <question>Kas buvo Steigiamojo seimo  pirmininkas 1920-1922m?</question>
+      <answer>A.Stulginskis</answer>
+      <case1>K.Grinius</case1>
+      <case2>A.Smetona</case2>
+    </task>
+    <task stage="4">
+      <question>Kiek šiuo metu Lietuvoje yra ministerijų?</question>
+      <answer>14</answer>
+      <case1>13</case1>
+      <case2>12</case2>
+    </task>
+    <task stage="4">
+      <question>Kada Lietuvoje buvo surengta pirmoji dainų šventė?</question>
+      <answer>1926</answer>
+      <case1>1936</case1>
+      <case2>1958</case2>
+    </task>
+    <task stage="3">
+      <question>Kuriame mieste yra JTO būstinė?</question>
+      <answer>Niujorke</answer>
+      <case1>Paryžiuje</case1>
+      <case2>Briuselyje</case2>
+    </task>
+    <task stage="3">
+      <question>Kuri iš šių religijų atsirado anksčiausiai?</question>
+      <answer>Budizmas</answer>
+      <case1>Krikščionybė</case1>
+      <case2>Islamas</case2>
+    </task>
+    <task stage="2">
+      <question>Kiek yra teisejų yra LR Konstituciniame teisme?</question>
+      <answer>9</answer>
+      <case1>10</case1>
+      <case2>8</case2>
+    </task>
+    <task stage="2">
+      <question>Aukšččiausias pastatas pasaulyje yra..?</question>
+      <answer>Dubajuje</answer>
+      <case1>Niujorke</case1>
+      <case2>Tokijuje</case2>
+    </task>
+    <task stage="2">
+      <question>Ilgiausia upė Europoje yra..?</question>
+      <answer>Volga</answer>
+      <case1>Dunojus</case1>
+      <case2>Temzė</case2>
+    </task>
+    <task stage="1">
+      <question>Kiek narių yra dabartiniame seime?</question>
+      <answer>141</answer>
+      <case1>139</case1>
+      <case2>143</case2>
+    </task>
+    <task stage="1">
+      <question>Kur vyks 2016m. vasaros olimpinės varžybos?</question>
+      <answer>Rio de Ženeire</answer>
+      <case1>Brazilijoje</case1>
+      <case2>Londone</case2>
+    </task>
+  </collection>
+</root>
