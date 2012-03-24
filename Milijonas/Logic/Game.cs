@@ -28,6 +28,7 @@ namespace Milijonas.Logic
     {
 
         /** constants */
+        public const int ANSWER_TO_WIN = 18;
         public const int REMOVE_INCORRECT_ANSWERS_HELPS = 3;
         public const int CHANGE_QUESTION_HELPS = 1;
 

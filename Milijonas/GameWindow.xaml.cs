@@ -48,7 +48,6 @@ namespace Milijonas
 
         private void gameWindowClosing(object sender, System.ComponentModel.CancelEventArgs e)
         {
-            //this.Close();
             parent.Show();
         }
 
@@ -72,8 +71,14 @@ namespace Milijonas
 		{
 			if (this.game.SubmitAnswer(guess))
 			{
+
                 this.enableButtons();
-                this.game.NewQuestion();
+                if (this.game.GetAnsweredQuestions() == Game.ANSWER_TO_WIN)
+                {
+                    this.gameWin();
+                    return;
+                }
+                this.game.NewQuestion();   
                 if (this.game.IsNewLevel())
                     this.showNewLevelDialog();
                 this.labels[this.game.GetAnsweredQuestions()].Foreground = Brushes.Turquoise;
@@ -85,6 +90,24 @@ namespace Milijonas
 				this.gameLost();
 			}
 		}
+
+        private void gameWin()
+        {
+            DialogBox dialog = new DialogBox(this,
+                "Sveikiname! Jūs laimėjote milijono žaidimą!!!\nAr norite žaisti dar kartą?",
+                DialogBox.Type.QUESTION_DIALOG);
+            dialog.Owner = this;
+            bool? result = dialog.ShowDialog();
+            if (result.HasValue && result.Value)
+            {
+                this.restart();
+            }
+            else
+            {
+                this.Close();
+                this.parent.Show();
+            }
+        }
 
         private void showNewLevelDialog()
         {
@@ -138,6 +161,7 @@ namespace Milijonas
         {
             this.changeQuestionHelpsLeft.Content = 0;
             this.game.UseSkipQuestionHelp();
+            this.enableButtons();
             this.showQuestion();
             this.shiftHelpButton.IsEnabled = false;
         }
@@ -150,18 +174,11 @@ namespace Milijonas
             if (this.game.RemoveInncorectAnswerHelp <= 0)
                 this.helpRemoveButton.IsEnabled = false;
             if (((string)this.case1Button.Content) == "")
-            {
                 this.case1Button.IsEnabled = false;
-            }
-            else if (((string)this.case2Button.Content) == "")
-            {
+            if (((string)this.case2Button.Content) == "")
                 this.case2Button.IsEnabled = false;
-            }
-            else if (((string)this.case3Button.Content) == "")
-            {
+            if (((string)this.case3Button.Content) == "")
                 this.case3Button.IsEnabled = false;
-            }
-            
         }
 
         private void enableButtons()
@@ -170,7 +187,5 @@ namespace Milijonas
             this.case2Button.IsEnabled = true;
             this.case3Button.IsEnabled = true;
         }
-
-  
     }
 }
