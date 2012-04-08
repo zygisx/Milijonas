@@ -80,6 +80,10 @@ namespace Milijonas
                 }
                 if (this.game.IsNewLevel())
                     this.showNewLevelDialog();
+                
+                this.game.NewQuestion();
+                
+                
                 this.labels[this.game.GetAnsweredQuestions()].Foreground = Brushes.Turquoise;
                 this.labels[this.game.GetAnsweredQuestions() - 1].Foreground = Brushes.White;
 				this.showQuestion();
