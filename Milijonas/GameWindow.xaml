@@ -178,6 +178,6 @@
 		<Label x:Name="changeQuestionHelpsLeft" Content="1" HorizontalAlignment="Left" Height="26.579" Margin="344.667,173.093,0,0" VerticalAlignment="Top" Width="25.333" FontSize="14.667" Background="#00000000" Foreground="White"/>
 		<Label Content="Liko:&#xa;" HorizontalAlignment="Right" Height="26.579" Margin="0,173.498,324.574,0" VerticalAlignment="Top" Width="40.794" FontSize="14.667" Background="#00000000" Foreground="White"/>
 		<Label x:Name="removeAnswerHelpsLeftLabel" Content="3" HorizontalAlignment="Right" Height="26.579" Margin="0,173.498,295.241,0" VerticalAlignment="Top" Width="25.333" FontSize="14.667" Background="#00000000" Foreground="White"/>
-        <Image Height="101" HorizontalAlignment="Left" Margin="165,41,0,0" Name="image1" Stretch="Fill" VerticalAlignment="Top" Width="396" Source="/Milijonas;component/Images/titlte.png" />
+        <Image Height="101" HorizontalAlignment="Left" Margin="165,41,0,0" Name="image1" Stretch="Fill" VerticalAlignment="Top" Width="396" Source="/Milijonas;component/Images/title.png" />
     </Grid>
 </Window>
