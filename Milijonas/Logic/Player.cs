@@ -55,6 +55,9 @@ namespace Milijonas.Logic
                 case Stage.Fourth:
                     CurrentStage = Stage.Fifth;
                     break;
+                case Stage.Fifth:
+                    CurrentStage = Stage.Sixth;
+                    break;
                 case Stage.Sixth:
                     CurrentStage = Stage.Winner;
                     break;
@@ -74,6 +77,7 @@ namespace Milijonas.Logic
                 case 12:
                 case 15:
                 case 17:
+                case 18:
                     return true;
             }
             return false;

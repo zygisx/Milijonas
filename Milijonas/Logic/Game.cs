@@ -28,6 +28,7 @@ namespace Milijonas.Logic
     {
 
         /** constants */
+        public const int ANSWER_TO_WIN = 18;
         public const int REMOVE_INCORRECT_ANSWERS_HELPS = 3;
         public const int CHANGE_QUESTION_HELPS = 1;
 
@@ -37,6 +38,7 @@ namespace Milijonas.Logic
         private int removedAnswers;
         private Boolean skipQuestionHelp = true;
         private int removeIncorrectAnswerHelp = REMOVE_INCORRECT_ANSWERS_HELPS;
+        private SortedSet<int> usedQuestions;
         /** properties */
         public string CurrentQuestion
         {
@@ -72,6 +74,7 @@ namespace Milijonas.Logic
         public Game()
         {
             GamePlayer = new Player();
+            usedQuestions = new SortedSet<int>();
             this.NewQuestion();
         }
 
@@ -95,7 +98,16 @@ namespace Milijonas.Logic
 
         public Boolean IsNewLevel()
         {
-            return GamePlayer.IsNewLevel();
+            if (GamePlayer.IsNewLevel())
+            {
+                this.usedQuestions.Clear();
+                return true;
+            }
+            else return false;
+        }
+        public Boolean IsWin() 
+        {
+            return (GamePlayer.CurrentStage == Stage.Winner);
         }
 
         public int GetAnsweredQuestions()
@@ -104,7 +116,7 @@ namespace Milijonas.Logic
         }
 
         public void NewQuestion() {
-            this.currentQuestion = QuestionsStorage.GetRandomQuestion(GamePlayer.CurrentStage);
+            this.currentQuestion = QuestionsStorage.GetRandomQuestion(GamePlayer.CurrentStage, usedQuestions);
             this.randomAnswers = currentQuestion.GetRandomPossibleAnswers();
             this.removedAnswers = 0;
         }

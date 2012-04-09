@@ -26,7 +26,7 @@ namespace Milijonas.Data
             //this.XmlDoc = XDocument.Load(@XML_FILE_PATH);
         }
 
-        public static Question GetRandomQuestion(Stage stage) 
+        public static Question GetRandomQuestion(Stage stage, SortedSet<int> allreadyUsed) 
         {
             XDocument XmlDoc = XDocument.Load(XML_FILE_PATH);
 
@@ -37,6 +37,9 @@ namespace Milijonas.Data
             int numberOfQuestions = result.Count();
             Random rand = new Random();
             int index = rand.Next(numberOfQuestions);
+            while (allreadyUsed.Contains(index))
+                if (++index >= numberOfQuestions) index = 0;
+            allreadyUsed.Add(index);
             var element = result.ElementAt(index);
             
 

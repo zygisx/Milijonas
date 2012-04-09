@@ -181,7 +181,7 @@
       <case1>Jelena Isambajeva</case1>
       <case2>Michael Phelps</case2>
     </task>
-	<task stage="2">
+    <task stage="2">
       <question>Kada prasidėjo ir baigėsi antasis pasaulinis karas?</question>
       <answer>1939-1945</answer>
       <case1>1914-1918</case1>
@@ -294,6 +294,12 @@
       <answer>Actekai</answer>
       <case1>Egiptiečiai</case1>
       <case2>Majai</case2>
+    </task>
+    <task stage="6">
+      <question>Ekvadoro sostinė</question>
+      <answer>Kitas</answer>
+      <case1>Sensėjus</case1>
+      <case2>Malina</case2>
     </task>
   </collection>
 </root>

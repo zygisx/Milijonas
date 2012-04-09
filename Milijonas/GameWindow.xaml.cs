@@ -73,9 +73,17 @@ namespace Milijonas
 			if (this.game.SubmitAnswer(guess))
 			{
                 this.enableButtons();
-                this.game.NewQuestion();
+                if (this.game.IsWin())
+                {
+                    this.showCongratsDialog();
+                    return;
+                }
                 if (this.game.IsNewLevel())
                     this.showNewLevelDialog();
+                
+                this.game.NewQuestion();
+                
+                
                 this.labels[this.game.GetAnsweredQuestions()].Foreground = Brushes.Turquoise;
                 this.labels[this.game.GetAnsweredQuestions() - 1].Foreground = Brushes.White;
 				this.showQuestion();
@@ -85,6 +93,25 @@ namespace Milijonas
 				this.gameLost();
 			}
 		}
+
+        private void showCongratsDialog()
+        {
+            DialogBox dialog = new DialogBox(this,
+                "Sveikiname Jūs laimėjote.\nNorite žaisti dar kartą?",
+                DialogBox.Type.QUESTION_DIALOG);
+            dialog.Owner = this;
+            bool? result = dialog.ShowDialog();
+            if (result.HasValue && result.Value)
+            {
+                this.restart();
+            }
+            else
+            {
+                this.Close();
+                this.parent.Show();
+            }
+        }
+
 
         private void showNewLevelDialog()
         {
@@ -152,18 +179,14 @@ namespace Milijonas
             if (((string)this.case1Button.Content) == "")
             {
                 this.case1Button.IsEnabled = false;
-            }
-            else if (((string)this.case2Button.Content) == "")
-            {
+            if (((string)this.case2Button.Content) == "")
                 this.case2Button.IsEnabled = false;
-            }
-            else if (((string)this.case3Button.Content) == "")
-            {
+            if (((string)this.case3Button.Content) == "")
                 this.case3Button.IsEnabled = false;
-            }
-            
+        }
         }
 
+        // if any of buttons was disabled 
         private void enableButtons()
         {
             this.case1Button.IsEnabled = true;
