@@ -186,6 +186,7 @@ namespace Milijonas
         }
         }
 
+        // if any of buttons was disabled 
         private void enableButtons()
         {
             this.case1Button.IsEnabled = true;
